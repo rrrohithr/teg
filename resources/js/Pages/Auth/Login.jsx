@@ -37,9 +37,11 @@ export default function Login({ status, canResetPassword }) {
                     </div>
                     <div>
                         <div className="d-flex justify-content-between align-items-center">
-                            <PrimaryButton className="w-100" disabled={processing}>
-                                Login using SSO
-                            </PrimaryButton>
+                            <a className='w-100 d-block' href={route('sso-login')}>
+                                <PrimaryButton className="w-100" disabled={processing}>
+                                    Login using SSO
+                                </PrimaryButton>
+                            </a>
                         </div>
                     </div>
                 </div>
